@@ -1,0 +1,11 @@
+===============================================================
+ SRC Path: /Users/gideonschoonbee/Desktop/Sort/test/src/.DS_Store
+ DEST Path: /Users/gideonschoonbee/Desktop/Sort/test/dest/.DS_Store
+---
+ EXISTS
+ FILE CONTENT MISMATCH 79629a92ecacafacf7ecb663674491aaca29c4e37ca01aeb4f59b19514abbb73
+===============================================================
+ SRC Path: /Users/gideonschoonbee/Desktop/Sort/test/src/other/Sleep+Smarter+Bonus_Final.pdf
+ DEST Path: /Users/gideonschoonbee/Desktop/Sort/test/dest/other/Sleep+Smarter+Bonus_Final.pdf
+---
+FILE NOT FOUND: /Users/gideonschoonbee/Desktop/Sort/test/dest/other/Sleep+Smarter+Bonus_Final.pdf
