@@ -1,8 +1,11 @@
-
+#! /usr/bin/env python
+# This is a file compare tool for command shell, created in Python. The tool was
+# created to report missing or badly broken files.
 #
-# Maintainer    : Mortolio <master@mortolio.com>
+# Maintainer    : Mortolio <hello@mortolio.com>
 # Version       : 1.0
 #
+
 import hashlib
 import hmac
 import os
