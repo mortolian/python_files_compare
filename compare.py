@@ -99,23 +99,25 @@ def traverse(h, path):
 
             # check if the destination has this file
             if os.path.isfile(dest_path):
-                logstring += " EXISTS" + "\n"
+                logstring += " -> FILE EXISTS" + "\n"
                 dest_rs = os.lstat(dest_path)
 
                 # compare the file sizes
                 if dest_rs.st_size != rs.st_size:
-                    logstring += "FILE SIZE MISMATCH" + "\n"
+                    logstring += " -> FILE SIZE MISMATCH" + "\n"
+                    print "FILE SIZE MISMATCH: " + dest_path
                     errorfound = True
 
                 # compare the file content hash
                 if quick == False:
                     if file_hash(path) != file_hash(dest_path):
-                        logstring += " FILE CONTENT MISMATCH " + file_hash(path) + "\n"
+                        logstring += " -> FILE CONTENT MISMATCH " + file_hash(path) + "\n"
+                        print "FILE CONTENT MISMATCH: " + dest_path
                         errorfound = True
 
             else:
                 # Print to screen to see progress | no verbosity check here.
-                logstring += "FILE NOT FOUND: " + dest_path + "\n"
+                logstring += " -> FILE NOT FOUND: " + dest_path + "\n"
                 print "FILE NOT FOUND: " + dest_path
                 errorfound = True
 
